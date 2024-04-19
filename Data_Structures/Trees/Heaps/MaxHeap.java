@@ -13,7 +13,7 @@ public class MaxHeap {
 
     public boolean isEmpty() {
         return heapSize == 0;
-    }
+    }s
 
     public boolean isFull() {
         return heapSize == heap.length;
