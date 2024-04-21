@@ -40,9 +40,28 @@ public class SLList {
         return currIntNode.data;
     }
 
+    public int getNext(){
+        return first.next.data;
+    }
+
     public static void main(String[] args) {
-        SLList newlist = new SLList(10);
-        newlist.addLast(20);
-        System.out.println(newlist.getLast());
+        SLList head = new SLList(10);
+        head.addLast(1);
+        head.addLast(4);
+        head.addLast(3);
+        head.addLast(2);
+        head.addLast(5);
+        head.addLast(2);
+        int x = 3;
+
+        SLList dummy_1 = new SLList(-1);
+        SLList dummy_2 = new SLList(-1);
+        SLList p1 = dummy_1;
+        SLList p2 = dummy_2;
+
+        System.out.println(p1.getFirst());
+        System.out.println(p1.getNext());
+        System.out.println(dummy_1.getFirst());
+        System.out.println(dummy_1.getNext());
     }
 }

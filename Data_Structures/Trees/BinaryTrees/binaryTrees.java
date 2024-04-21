@@ -100,7 +100,7 @@ public class binaryTrees {
         queue.add(node);
 
         while (!queue.isEmpty()) {
-            Node current = queue.poll();
+            Node current = queue.poll(); //poll will retrieve and remove the head element (oldest)
             System.out.println(current.value + " ");
             
             if(current.left != null){
